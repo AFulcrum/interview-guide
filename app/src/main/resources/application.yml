@@ -18,7 +18,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/interview_guide
     username: postgres
-    password: 密码
+    password: 20070522
     driver-class-name: org.postgresql.Driver
 
   jpa:
@@ -42,7 +42,7 @@ spring:
       config: |
         singleServerConfig:
           address: "redis://localhost:6379"
-          password: 密码
+          password: 20070522
           database: 0
           connectionMinimumIdleSize: 10
           connectionPoolSize: 64
@@ -53,10 +53,10 @@ spring:
   ai:
     openai:
       base-url: https://dashscope.aliyuncs.com/compatible-mode
-      api-key: 自己的api
+      api-key: sk-5d17bd4375fa476097dac92fe1b170b9
       chat:
         options:
-          model: 选择模型
+          model: qwen-plus
           temperature: 0.2
       # Embedding模型配置 - 使用text-embedding-v3
       embedding:
@@ -107,8 +107,8 @@ app:
   # RustFS (S3兼容) 存储配置
   storage:
     endpoint: http://localhost:9000
-    access-key: 账户名
-    secret-key: 密码
+    access-key: afulcrum
+    secret-key: 20070522
     bucket: interview-guide
     region: us-east-1
 
